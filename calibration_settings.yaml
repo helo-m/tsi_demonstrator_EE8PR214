@@ -1,0 +1,17 @@
+camera0: 0  # ID of the first camera (used by OpenCV to access the camera). -- may change each time you plug or in diff pcs
+camera1: 2  # ID of the second camera (used by OpenCV to access the camera).
+
+frame_width: 1920  # Width of the video frames captured from the cameras (in pixels).
+frame_height: 1080  # Height of the video frames captured from the cameras (in pixels).
+
+#mono_calibration_frames: 10  # Number of frames to use for individual (mono) camera calibration. -- not being used rn
+stereo_calibration_frames: 6  # Number of frame pairs to use for stereo calibration.
+
+view_resize: 2.5  # Factor by which the frames are resized for display (e.g., 2.5 means the frame is scaled down by 1/2.5).
+
+checkerboard_box_size_scale: 3.19  # Real-world size of each square in the checkerboard pattern (in the chosen unit, e.g., millimeters or centimeters).
+
+checkerboard_rows: 4  # Number of inner corners per row in the checkerboard pattern.
+checkerboard_columns: 6  # Number of inner corners per column in the checkerboard pattern.
+
+cooldown: 50  # Cooldown time (in frames) between capturing consecutive images during calibration.
